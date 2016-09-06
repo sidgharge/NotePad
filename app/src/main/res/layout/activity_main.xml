@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sid.notepad.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/toolbar3"
+        app:theme="@style/MyCustomToolBarTheme">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar3"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ProgressBar
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/pbar"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/et_username"
+            android:hint="@string/username"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle"
+            android:paddingStart="10dp"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center|left"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/et_password"
+            android:inputType="textPassword"
+            android:layout_below="@+id/et_username"
+            android:hint="@string/password"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle"
+            android:textSize="20sp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sign_in"
+            android:text="@string/sign_in"
+            android:layout_below="@id/et_password"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rectangle_for_btn"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_new_user"
+            android:text="New user? Sign Up..."
+            android:textSize="20sp"
+            android:layout_below="@id/btn_sign_in"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sign_up"
+            android:text="@string/sign_up"
+            android:layout_below="@+id/tv_new_user"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rectangle_for_btn_up"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</RelativeLayout>

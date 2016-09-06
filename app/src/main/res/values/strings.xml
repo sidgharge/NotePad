@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NotePad</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="add">Add</string>
+    <string name="title">Title</string>
+    <string name="note">Note</string>
+    <string name="grid_layout">Grid Layout</string>
+    <string name="cardview_layout">Cardview Layout</string>
+    <string name="sync">Sync</string>
+    <string name="signout">SignOut</string>
+</resources>

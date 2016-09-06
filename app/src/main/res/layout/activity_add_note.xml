@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sid.notepad.AddNote">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/toolbar2"
+        app:theme="@style/MyCustomToolBarThemeForNote"
+        android:elevation="4dp">
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_title"
+        android:layout_below="@id/toolbar2"
+        android:layout_marginTop="20dp"
+        android:hint="@string/title"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_content"
+        android:layout_below="@id/et_title"
+        android:hint="@string/note"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="15dp"
+        android:scrollbars="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
